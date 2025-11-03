@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Product Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "year": {
+          "type": "integer"
+        },
+        "price": {
+          "type": "number"
+        },
+        "cpuModel": {
+          "type": "string"
+        },
+        "hardDisk": {
+          "type": "string"
+        }
+      },
+      "required": ["year", "price", "cpuModel", "hardDisk"]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": ["id", "name", "data", "createdAt"]
+}
