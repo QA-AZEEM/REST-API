@@ -15,7 +15,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 
-public class CreateItem extends BaseAPIClass {
+public class CreateProduct extends BaseAPIClass {
 
 	private Response response;
 	private Items items;
